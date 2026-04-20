@@ -106,7 +106,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 const dbConnection = async () => {
   try {
     await mongoose.connect(
-      "mongodb+srv://arvind_db_user:hashain12345@cluster0.rsl65iu.mongodb.net/web3-auth?retryWrites=true&w=majority"
+      "mongodb://arvind_db_user:vTrPdY8YCcwuEizr@ac-56elnco-shard-00-00.pcjaexa.mongodb.net:27017,ac-56elnco-shard-00-01.pcjaexa.mongodb.net:27017,ac-56elnco-shard-00-02.pcjaexa.mongodb.net:27017/?ssl=true&replicaSet=atlas-c3hnv6-shard-0&authSource=admin&appName=Cluster0"
     );
     console.log("Database connected ✅");
   } catch (err) {
