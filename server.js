@@ -4,10 +4,12 @@ const mongoose = require('mongoose');
 const { ethers } = require('ethers');
 const swaggerUi = require('swagger-ui-express');
 const swaggerJsdoc = require('swagger-jsdoc');
+const cors = require('cors');
 
 const { Signature, User } = require('./modal');
 
 const app = express();
+app.use(cors())
 app.use(express.json());
 
 const PORT = 8080;
