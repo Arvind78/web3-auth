@@ -177,9 +177,9 @@ app.post('/auth/nonce', async (req, res) => {
       { upsert: true, new: true }
     );
 
-    const message = `Sign this message to login. Nonce: ${nonce} ${walletAddress.toLowerCase()}`;
+    const message = `Sign this message to login. Nonce: ${nonce}`;
 
-    return res.json({ message , nonce });
+    return res.json({ message , walletAddress , nonce});
 
   } catch (err) {
     return res.status(500).json({ error: err.message });
