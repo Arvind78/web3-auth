@@ -26,6 +26,10 @@ const swaggerSpec = swaggerJsdoc({
       {
         url: `http://localhost:${PORT}`
       }
+
+      {
+        url: 'https://web3-auth-mjwy.onrender.com'
+      }
     ],
     components: {
       schemas: {
